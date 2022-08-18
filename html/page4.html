@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bizimle Çalışın</title>
+
+    <!-- Bootstrap imports-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-lg-3 col-sm-1 col-md-2"></div>
+        <!--content-->
+        <div class="col-lg-6 col-sm-10 col-md-8">
+            <div class="container mx-auto my-auto bg-light mt-5 px-4 py-2">
+                <!--counter-->
+                <div class="row">
+                    <div class="row-vertical mx-auto">
+                        <div class="progress">
+                            <div class="progress-bar cstmbar progress-bar-striped progress-bar-animated"
+                                role="progressbar" aria-valuenow="62.5" aria-valuemin="0" aria-valuemax="100"
+                                style="width: 62.5%"></div>
+                        </div>
+                        <br>
+                        <h1 class="text-center">Eğitim bilgileri:</h1>
+                        <br>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <!--row1-->
+                    <div class="row">
+                        <label for="">Son mezun olunan okul durumu:</label>
+                    </div>
+                    <!--row2-->
+                    <div class="row">
+                        <div class="modalbox my-3 p-2">
+                            <div class="row">
+                                <div class="col-9">
+                                    <p class="pt-2">
+                                        Eklemek İçin Butona Tıklayınız.
+                                    </p>
+                                </div>
+                                <div class="col-3">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn custom w-100 h-100" data-bs-toggle="modal"
+                                        data-bs-target="#scl">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--row3-->
+                    <div class="row mt-3">
+                        <label for="">Yabancı dil bigisi:</label>
+                    </div>
+                    <!--row4-->
+                    <div class="row">
+                        <div class="modalbox my-3 p-2">
+                            <div class="row">
+                                <div class="col-9">
+                                    <p class="pt-2">
+                                        Eklemek İçin Butona Tıklayınız.
+                                    </p>
+                                </div>
+                                <div class="col-3">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn custom w-100 h-100" data-bs-toggle="modal"
+                                        data-bs-target="#language">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--row5-->
+                    <div class="row mt-3">
+                        <label for="">Bilgisayar kullanım yetkinliği:</label>
+                    </div>
+                    <!--row6-->
+                    <div class="row mt-1 mb-4 pb-4">
+                        <div class="modalbox my-3 p-2">
+                            <div class="row">
+                                <div class="col-9">
+                                    <p class="pt-2">
+                                        Eklemek İçin Butona Tıklayınız.
+                                    </p>
+                                </div>
+                                <div class="col-3">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn custom w-100 h-100" data-bs-toggle="modal"
+                                        data-bs-target="#pclevel">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--buttons-->
+                    <div class="row mt-5 pb-3 navigation">
+
+                        <div class="col">
+                            <button class="w-100 btn custom fs-4"><i class="fa-solid fa-arrow-left"></i></button>
+                        </div>
+                        <div class="col">
+                            <button class="w-100 btn custom fs-4"><i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-1 col-md-2"></div>
+    </div>
+
+    <!--buttons-->
+
+    <div class="smnavigation w-100">
+
+        <div class="row mx-2">
+            <div class="col">
+                <button class="w-100 btn custom fs-4"><i class="fa-solid fa-arrow-left"></i></button>
+            </div>
+            <div class="col">
+                <button class="w-100 btn custom fs-4"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Modal-Mezun-olunan-okullar-->
+    <div class="modal fade modal-lg" id="scl" tabindex="-1" aria-labelledby="sclLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="sclLabel">Mezun Olunan Okullar</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Seviye</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Okul Adı</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Fakülte / Tür</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Bölüm</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="form-floating mb-3">
+                                <input type="number" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Diploma Notu</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="form-floating mb-3">
+                                <input type="date" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Mezuniyet tarihi</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <button class="custom rounded float-end btn-md mx-2"><i class="fa-solid fa-floppy-disk"></i></button>
+                        <button class="custom rounded float-end btn-md mx-2"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+
+                    <br>
+                    <br>
+                    <hr>
+
+                    <div class="col float-start">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col" class="hidden">Seviye</th>
+                                    <th scope="col">Okul Adı</th>
+                                    <th scope="col" class="hidden">Fakülte/Tür</th>
+                                    <th scope="col">Bölüm</th>
+                                    <th scope="col" class="hidden">Not</th>
+                                    <th scope="col">Tarih</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td class="hidden">Lisans</td>
+                                    <td>Ostim Teknik Üniversitesi</td>
+                                    <td class="hidden">Mühendislik Fakültesi</td>
+                                    <td>Yazılım Mühendisliği</td>
+                                    <td class="hidden">3.4</td>
+                                    <td>02.08.2025</td>
+                                    <td><button class="custom rounded btn-md"><i class="fa-solid fa-xmark"></i></button></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td class="hidden">Lisans</td>
+                                    <td>Ostim Teknik Üniversitesi</td>
+                                    <td class="hidden">Mühendislik Fakültesi</td>
+                                    <td>Yazılım Mühendisliği</td>
+                                    <td class="hidden">3.4</td>
+                                    <td>02.08.2025</td>
+                                    <td><button class="custom rounded btn-md"><i class="fa-solid fa-xmark"></i></button></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn custom rounded btn-md" data-bs-dismiss="modal">Kapat</button>
+                        <button type="button" class="btn custom rounded btn-md">Kaydet</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal-language-->
+    <div class="modal fade modal-lg" id="language" tabindex="-1" aria-labelledby="languageLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="languageLabel">Yabancı Dil Seviyesi</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Seviye</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Okul Adı</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <button class="custom rounded float-end btn-md mx-2"><i class="fa-solid fa-floppy-disk"></i></button>
+                        <button class="custom rounded float-end btn-md mx-2"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+
+                    <br>
+                    <br>
+                    <hr>
+
+                    <div class="col">
+                        <table class="table ">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Yabancı dil</th>
+                                    <th scope="col">Seviye</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Rusça</td>
+                                    <td>Orta</td>
+                                    <td><button class="custom rounded btn-md"><i class="fa-solid fa-xmark"></i></button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn custom rounded btn-md" data-bs-dismiss="modal">Kapat</button>
+                        <button type="button" class="btn custom rounded btn-md">Kaydet</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal-pclevel-->
+    <div class="modal fade modal-lg" id="pclevel" tabindex="-1" aria-labelledby="pclevelLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="pclevelLabel">Bilgisayar Kullanım Yetkinliği</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Bilgisayar Programı</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Seviyesi</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                    style="height: 100px"></textarea>
+                                <label for="floatingTextarea2">Ekstra Belirtmek istediğiniz yetkinlikler:</label>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <button class="custom rounded float-end btn-md mx-2"><i class="fa-solid fa-floppy-disk"></i></button>
+                        <button class="custom rounded float-end btn-md mx-2"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+
+                    <br>
+                    <br>
+                    <hr>
+
+                    <div class="col">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Program</th>
+                                    <th scope="col">Yetkinlik</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Ofis Programları</td>
+                                    <td>İleri Seviye</td>
+                                    <td><button class="custom rounded btn-md"><i class="fa-solid fa-xmark"></i></button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn custom rounded btn-md" data-bs-dismiss="modal">Kapat</button>
+                        <button type="button" class="btn custom rounded btn-md">Kaydet</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

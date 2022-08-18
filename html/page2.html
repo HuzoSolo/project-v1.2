@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bizimle Çalışın</title>
+
+    <!-- Bootstrap imports-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-lg-3 col-sm-1 col-md-2"></div>
+        <!--content-->
+        <div class="col-lg-6 col-sm-10 col-md-8">
+            <div class="container mx-auto my-auto bg-light mt-5 px-4 py-2">
+                <!--counter-->
+                <div class="row">
+                    <div class="row-vertical mx-auto">
+                        <div class="progress">
+                            <div class="progress-bar cstmbar progress-bar-striped progress-bar-animated"
+                                role="progressbar" aria-valuenow="37.5" aria-valuemin="0" aria-valuemax="100"
+                                style="width: 37.5%"></div>
+                        </div>
+                        <br>
+                        <h1 class="text-center">Sağlık bilgileri:</h1>
+                        <br>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <!--row1-->
+                    <div class="row">
+                        <label for="">Engel Durumu:</label>
+                        <div class="col">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Engelli
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Herhangi bir Engel bulunmamakta
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <!--row2-->
+                    <div class="row">
+
+                        <div class="modalbox my-3 p-2">
+                            <div class="row">
+                                <div class="col-9">
+                                    <div class="">
+                                        <p class="pt-2">
+                                            Eklemek İçin Butona Tıklayınız.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn custom w-100 h-100" data-bs-toggle="modal"
+                                        data-bs-target="#disability">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!--row3-->
+                    <div class="row mt-3">
+                        <label for="">Sürekli/Ağır Hastalık durumu:</label>
+                        <div class="col mt-1">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault2"
+                                    id="flexRadioDefault3">
+                                <label class="form-check-label" for="flexRadioDefault3">
+                                    Var
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault2"
+                                    id="flexRadioDefault4" checked>
+                                <label class="form-check-label" for="flexRadioDefault4">
+                                    Yok
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--row4-->
+                    <div class="row mt-1">
+                        <div class="modalbox my-3 p-2">
+                            <div class="row">
+                                <div class="col-9">
+                                    <div class="">
+                                        <p class="pt-2">
+                                            Eklemek İçin Butona Tıklayınız.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn custom w-100 h-100" data-bs-toggle="modal"
+                                        data-bs-target="#health">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--row5-->
+                    <div class="row">
+                        <label for="">Sürekli kullandığınız ilaç & protez:</label>
+                        <div class="col mt-1">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault5"
+                                    id="flexRadioDefault5">
+                                <label class="form-check-label" for="flexRadioDefault5">
+                                    Var
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault5"
+                                    id="flexRadioDefault6" checked>
+                                <label class="form-check-label" for="flexRadioDefault6">
+                                    Yok
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--row6-->
+                    <div class="row ">
+                        <div class="modalbox my-3 p-2">
+                            <div class="row">
+                                <div class="col-9">
+                                    <div class="">
+                                        <p class="pt-2">
+                                            Eklemek İçin Butona Tıklayınız.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn custom w-100 h-100" data-bs-toggle="modal"
+                                        data-bs-target="#medicine">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--row7-->
+                    <div class="row mt-1 mb-5 pb-5">
+                        <div class="form-floating mb-3">
+                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                <option selected>Bilinmiyor</option>
+                                <option value="1">ABrh+</option>
+                                <option value="2">ABrh-</option>
+                                <option value="1">Arh+</option>
+                                <option value="2">Arh-</option>
+                                <option value="1">Brh+</option>
+                                <option value="2">Brh-</option>
+                                <option value="1">0rh+</option>
+                                <option value="2">0rh-</option>
+                            </select>
+                            <label for="floatingSelect" class="ps-4">Kan Grubunuzu Seçiniz:</label>
+                        </div>
+                    </div>
+                </div>
+                <!--buttons-->
+                <div class="row mt-5 pb-3 navigation">
+
+                    <div class="col">
+                        <button class="w-100 btn custom fs-4"><i class="fa-solid fa-arrow-left"></i></button>
+                    </div>
+                    <div class="col">
+                        <button class="w-100 btn custom fs-4"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-1 col-md-2"></div>
+    </div>
+
+    <!--buttons-->
+
+    <div class="smnavigation w-100">
+
+        <div class="row mx-2">
+            <div class="col">
+                <button class="w-100 btn custom fs-4"><i class="fa-solid fa-arrow-left"></i></button>
+            </div>
+            <div class="col">
+                <button class="w-100 btn custom fs-4"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal-Engel-Durumu-->
+    <div class="modal fade modal-lg" id="disability" tabindex="-1" aria-labelledby="disabilityLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="disabilityLabel">Engel Durumu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row-vertical">
+                        <div class="col">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Engel Tipi:</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-floating mb-3">
+                                <input type="number" class="form-control" id="floatingPassword" placeholder="Password">
+                                <label for="floatingPassword">Engel Yüzdesi:</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <button class="custom rounded float-end btn-md mx-2"><i class="fa-solid fa-floppy-disk"></i></button>
+                            <button class="custom rounded float-end btn-md mx-2"><i class="fa-solid fa-trash-can"></i></button>
+                        </div>
+                        <br>
+                        <br>
+                        <hr>
+                        <div class="col">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Engel Tipi</th>
+                                        <th scope="col">Engel Yüzdesi</th>
+                                        <th scope="col"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Görme</td>
+                                        <td>%50</td>
+                                        <td><button class="custom rounded btn-md"><i class="fa-solid fa-xmark"></i></button></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Duyma</td>
+                                        <td>%70</td>
+                                        <td><button class="custom rounded btn-md"><i class="fa-solid fa-xmark"></i></button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn custom rounded btn-md" data-bs-dismiss="modal">Kapat</button>
+                    <button type="button" class="btn custom rounded btn-md">Kaydet</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal-Sağlık-Durumu-->
+    <div class="modal fade modal-lg" id="health" tabindex="-1" aria-labelledby="healthLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="healthLabel">Geçmişteki Hastalıklar</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row-vertical">
+                        <div class="col">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Ameliyat & Sağlık sorunu adı:</label>
+                            </div>
+                        </div>                    
+                        <div class="col">
+                            <button class="custom rounded float-end btn-md mx-2"><i class="fa-solid fa-floppy-disk"></i></button>
+                            <button class="custom rounded float-end btn-md mx-2"><i class="fa-solid fa-trash-can"></i></button>
+                        </div>
+                        <br>
+                        <br>
+                        <hr>
+                        <div class="col">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Ameliyat Bölgesi</th>
+                                        <th scope="col"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Beyin</td>
+                                        <td><button class="custom rounded btn-md"><i class="fa-solid fa-xmark"></i></button></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Kalp</td>
+                                        <td><button class="custom rounded btn-md"><i class="fa-solid fa-xmark"></i></button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn custom rounded btn-md" data-bs-dismiss="modal">Kapat</button>
+                    <button type="button" class="btn custom rounded btn-md">Kaydet</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal-medicine-->
+    <div class="modal fade modal-lg" id="medicine" tabindex="-1" aria-labelledby="medicineLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="medicineLabel">Sürekli Kullanılan ilaç & protez bilgisi</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row-vertical">
+                        <div class="col">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Devamlı Kullanılan İlacın adı:</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-floating mb-3">
+                                <input type="number" class="form-control" id="floatingPassword" placeholder="Password">
+                                <label for="floatingPassword">Protez:</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <button class="custom rounded float-end btn-md mx-2"><i class="fa-solid fa-floppy-disk"></i></button>
+                            <button class="custom rounded float-end btn-md mx-2"><i class="fa-solid fa-trash-can"></i></button>
+                        </div>
+                        <br>
+                        <br>
+                        <hr>
+                        <div class="col">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Kullanılan ilaç</th>
+                                        <th scope="col">Protez</th>
+                                        <th scope="col"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Parol</td>
+                                        <td>Sağ Kol</td>
+                                        <td><button class="custom rounded btn-md"><i class="fa-solid fa-xmark"></i></button></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Apranax</td>
+                                        <td>Sağ Bacak</td>
+                                        <td><button class="custom rounded btn-md"><i class="fa-solid fa-xmark"></i></button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn custom rounded btn-md" data-bs-dismiss="modal">Kapat</button>
+                    <button type="button" class="btn custom rounded btn-md">Kaydet</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
